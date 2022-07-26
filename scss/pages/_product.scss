@@ -7,6 +7,9 @@
   li {
     width: 33.3333%;
     border: 1px solid $gray-light;
+    &:hover {
+      background: -webkit-linear-gradient(rgba($gray, 0.2), rgba($white, 0.2));
+    }
   }
   a {
     padding: 16px 0 8px;
@@ -16,9 +19,6 @@
     @include desktop-lg {
       font-size: 32px;
       padding: 24px 0 16px;
-    }
-    &:hover {
-      border-bottom: 8px solid $primary;
     }
   }
   .active {
@@ -101,7 +101,8 @@
   .product-op-card img {
     width: 100%;
     &:hover {
-      opacity: .8;
+      opacity: .6;
+      transition: .3s;
     }
   }
   .d-mobile-none {
@@ -146,7 +147,8 @@
   .product-sg-card img {
     width: 100%;
     &:hover {
-      opacity: .8;
+      opacity: .6;
+      transition: .3s;
     }
   }
   .d-mobile-none {
