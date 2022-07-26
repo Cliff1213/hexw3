@@ -79,8 +79,8 @@ img {
 }
 
 .container {
-  max-width: 1368px;
-  padding: 0 14px;
+  max-width: 1320px;
+  padding: 0 12px;
   margin: 0 auto;
 }
 
@@ -950,6 +950,7 @@ body {
 @media (min-width: 992px) {
   .series-list li {
     margin-bottom: 0;
+    width: 32%;
   }
 }
 
@@ -961,7 +962,7 @@ body {
 
 @media (min-width: 992px) {
   .series-list li img {
-    width: 416px;
+    width: 100%;
   }
 }
 
@@ -1066,7 +1067,7 @@ body {
 
 @media (min-width: 576px) {
   .comments-card {
-    width: 48%;
+    width: 48.2222%;
     margin-bottom: 24px;
   }
 }
@@ -1079,7 +1080,7 @@ body {
 
 @media (min-width: 992px) {
   .comments-card {
-    width: 24%;
+    width: 23.6666%;
     margin-bottom: 0;
   }
 }
