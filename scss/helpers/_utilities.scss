@@ -1,0 +1,199 @@
+.container {
+  // max-width: 1296px;
+  max-width: 1368px;
+  padding: 0 14px;
+  margin: 0 auto;
+  @include pad {
+    padding: 0 36px;
+  }
+}
+// display
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+
+// color
+.bg-primary {
+  background: $primary;
+}
+.bg-secondary {
+  background: $secondary;
+}
+.bg-dark {
+  background: $dark;
+}
+.bg-black {
+  background: $black;
+}
+.bg-warm {
+  background: $warm;
+}
+.bg-white {
+  background: $white;
+}
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-white {
+  color: $white;
+}
+.text-light {
+  color: $light;
+}
+.text-gray {
+  color: $gray;
+}
+.text-gray-dull {
+  color: $gray-dull;
+}
+.text-gray-deep {
+  color: $gray-deep;
+}
+.text-black {
+  color: $black;
+}
+
+// font
+.fs-1 {
+  font-size: 14px;
+}
+.fs-2 {
+  font-size: 20px;
+}
+.fs-3 {
+  font-size: 24px;
+}
+.fs-4 {
+  font-size: 32px;
+}
+.fs-5 {
+  font-size: 36px;
+}
+.fs-6 {
+  font-size: 48px;
+}
+.normal {
+  font-weight: 400;
+}
+.medium {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.ex-bold {
+  font-weight: 900;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.italic {
+  font-style: italic;
+}
+
+// space
+.mx-auto {
+  margin: 0 auto;
+}
+$direction: (
+  'l': 'left',
+  'r': 'right',
+  't': 'top',
+  'b': 'bottom'
+);
+@each $key, $value in $direction {
+  @for $i from 1 through 8 {
+    .m#{$key}-#{$i} {
+      margin-#{$value}: $space * $i;
+    }
+  }
+}
+
+// position
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+// others
+.w-100 {
+  width: 100%;
+}
+
+// underline animation
+.underline-active {
+  position: relative;
+}
+.underline-active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-bottom: 3px solid $secondary;
+  text-align: center;
+}
+.underline-active:hover::before {
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+
+// show info effect
+.show-info::before {
+  content: "閱讀更多";
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba($black, 0.6), rgba($white, 0.1));
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.show-info:hover::before {
+  opacity: 1;
+  color: #fff;
+}

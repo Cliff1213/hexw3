@@ -1,0 +1,36 @@
+.faq {
+  padding: 40px 0 64px;
+  @include pad {
+    padding: 80px 0;
+  }
+  @include desktop-lg {
+    padding: 96px 0 80px;
+  }
+  &-title {
+    border-left: 8px solid $primary;
+    padding-left: 8px;
+    @include pad {
+      font-size: 32px;
+    }
+    @include desktop {
+      font-size: 48px;
+      margin-bottom: 32px;
+    }
+  }
+  &-subtitle {
+    @include pad {
+      font-size: 24px;
+    }
+  }
+  &-list li {
+    @include desktop {
+      margin-bottom: 32px;
+    }
+  }
+  &-list h3 {
+    white-space: nowrap;
+  }
+  &-list p {
+    color: $gray-dull;
+  }
+}

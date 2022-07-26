@@ -1,0 +1,298 @@
+// banner
+.banner {
+  background: url('../images/home-header-sm.png') no-repeat center;
+  background-size: cover;
+  padding: 144px 0;
+  @include pad {
+    padding: 296px 0;
+  }
+  @include desktop-lg {
+    background: url('../images/home-header.png') no-repeat center;
+    background-size: cover;
+  }
+  &-title {
+    animation-delay: .5s;
+    @include pad {
+      font-size: 48px;
+    }
+    @include desktop {
+      font-size: 64px;
+    }
+  }
+  &-subtitle {
+    animation-delay: .5s;
+    @include pad {
+      font-size: 28px;
+    }
+    @include desktop {
+      font-size: 36px;
+    }
+  }
+  &-btn {
+    padding: 6px 12px;
+    &:hover {
+      background: $secondary;
+      transition: .3s;
+    }
+  }
+  .animate__animated {
+    animation-delay: .8s;
+  }
+}
+
+// service
+.service {
+  padding: 40px 0;
+  @include pad {
+    padding: 80px 0;
+  }
+  &-title {
+    @include pad {
+      font-size: 36px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include pad {
+      justify-content: space-between;
+    }
+  }
+  &-list li {
+    @include pad {
+      width: 47%;
+    }
+    @include desktop-lg {
+      width: 23%;
+    }
+    &:nth-child(3), &:nth-child(4) {
+      @include pad {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-list li p {
+    text-align: justify;
+  }
+  &-list li img {
+    width: 84px;
+    height: 84px;
+  }
+}
+
+// series
+.series {
+  padding: 40px 0;
+  @include pad {
+    padding: 80px 0;
+  }
+  &-title {
+    @include pad {
+      font-size: 36px;
+      margin-bottom: 48px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include desktop-lg {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-list li {
+    @include desktop-lg {
+      margin-bottom: 0;
+    }
+  }
+  &-list li img {
+    @include pad {
+      width: 326px;
+    }
+    @include desktop-lg {
+      width: 416px;
+    }
+  }
+}
+
+// cooperation
+.cooperation {
+  padding: 40px 0;
+  background: url('../images/index-bg-sm.png') no-repeat center fixed;
+  background-size: cover;
+  @include pad {
+    padding: 80px 0;
+  }
+  &-title {
+    @include pad {
+      font-size: 36px;
+      margin-bottom: 48px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include desktop-lg {
+      display: flex;
+    }
+  }
+  &-card:nth-child(1) {
+    @include desktop-lg {
+      margin-bottom: 0;
+    }
+  }
+  &-img {
+    .mobile-img {
+      @include pad {
+        display: none;
+      }
+    }
+    .desktop-img {
+      @include pad {
+        display: inline-block;
+      }
+    }
+  }
+  &-brand {
+    padding: 8px 0;
+  }
+}
+
+// comments
+.comments {
+  padding: 40px 0;
+  @include pad {
+    padding: 80px 0;
+  }
+  &-title {
+    @include pad {
+      font-size: 36px;
+      margin-bottom: 48px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include pad {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+.comments-card {
+  border: 1px solid $light;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #00000029;
+  @include pad {
+    width: 48%;
+    margin-bottom: 24px;
+  }
+  &:nth-child(3), &:nth-child(4) {
+    @include pad {
+      margin-bottom: 0;
+    }
+  }
+  @include desktop-lg {
+    width: 24%;
+    margin-bottom: 0;
+  }
+  .card-body {
+    height: 204px;
+    padding: 16px;
+  }
+}
+
+// contact
+.contact {
+  padding: 40px 0;
+  @include pad {
+    padding: 80px 0;
+  }
+  &-content {
+    @include pad {
+      max-width: 576px;
+    }
+    @include desktop-lg {
+      max-width: 636px;
+    }
+  }
+  &-title {
+    @include pad {
+      font-size: 36px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+    @include desktop-lg {
+      margin-bottom: 48px;
+    }
+  }
+  &-describe {
+    text-align: justify;
+    @include desktop-lg {
+      font-size: 20px;
+    }
+  }
+}
+.contact-list {
+  .input-text {
+    padding: 6px 12px;
+    border: 1px solid $dark;
+    &:focus {
+      outline: none;
+      background: darken($warm, 5%);
+    }
+  }
+  .list-button {
+    @include pad {
+      margin-top: 48px;
+    }
+  }
+  .input-button {
+    border: none;
+    padding: 16px 0;
+    cursor: pointer;
+    &:hover {
+      background: $secondary;
+      transition: .3s;
+    }
+    @include pad {
+      max-width: 336px;
+    }
+    @include desktop-lg {
+      max-width: 416px;
+    }
+  }
+  label {
+    cursor: pointer;
+    -webkit-user-select: none; // 避免過度頻繁選取
+  }
+
+  // checkbox customize style
+  .input-check {
+    align-self: start;
+    border: 1px solid #000;
+    padding: 7px;
+    display: inline-block;
+  }
+  .input-check:checked {
+    background: $warm;
+  }
+
+  .input-check:checked::after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    color: $primary;
+  }
+  
+}
+

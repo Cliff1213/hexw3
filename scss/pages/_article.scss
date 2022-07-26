@@ -1,0 +1,91 @@
+.article-wrap {
+  padding: 16px 0 64px;
+  @include pad {
+    padding: 16px 0 80px;
+  }
+  @include desktop {
+    padding: 80px 0;
+  }
+  .slash::after {
+    content: "/";
+    margin: 0 2px;
+  }
+  .article-tags {
+    @include pad {
+      font-size: 24px;
+    }
+  }
+  .tags-group {
+    @include desktop {
+      display: block;
+      width: 28%;
+      padding-left: 24px;
+    }
+  }
+  .tags-title {
+    @include desktop-lg {
+      font-size: 32px;
+    }
+  }
+  .tags-list {
+    @include desktop-lg {
+      font-size: 24px;
+    }
+  }
+  .article-content {
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .article-detail {
+    @include desktop {
+      width: 72%;
+    }
+  }
+  .article-title {
+    @include pad {
+      font-size: 32px;
+    }
+    @include desktop {
+      font-size: 48px;
+    }
+  }
+  .article-title-en {
+    @include pad {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 24px;
+    }
+  }
+  .article-list li {
+    text-align: justify;
+    @include pad {
+      margin-bottom: 24px;
+    }
+    @include desktop-lg {
+      margin-bottom: 40px;
+    }
+  }
+
+  .article-foot {
+    @include desktop {
+      display: block;
+    }
+  }
+  .article-social {
+    padding-bottom: 16px;
+    border-bottom: 1px solid $gray;
+  }
+  .article-social img:hover {
+    @include scaleEffect;
+  }
+  .article-social img {
+    width: 24px;
+    height: 24px;
+  }
+  .article-switch a:hover {
+    color: $secondary;
+  }
+}

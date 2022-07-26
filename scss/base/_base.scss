@@ -1,0 +1,13 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", 'Noto Sans TC', "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}

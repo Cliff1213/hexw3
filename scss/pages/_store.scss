@@ -1,0 +1,44 @@
+.store {
+  padding: 40px 0 64px;
+  @include pad {
+    padding: 80px 0;
+  }
+  @include desktop-lg {
+    padding: 96px 0 80px;
+  }
+}
+.store-list {
+  @include desktop-lg {
+    display: flex;
+    justify-content: space-between;
+  }
+  .location-list {
+    @include desktop-lg {
+      width: 40%;
+    }
+  }
+  .location-card {
+    @include desktop {
+      width: 50%;
+    }
+    @include desktop-lg {
+      width: 100%;
+    }
+  }
+  .card-img {
+    height: 100%;
+  }
+}
+.store-map {
+  height: 208px;
+  width: 100%;
+  @include pad {  
+    height: 414px;
+  }
+  @include desktop-lg {
+    width: 60%;
+    height: auto;
+    margin-top: 0;
+  }
+}
+

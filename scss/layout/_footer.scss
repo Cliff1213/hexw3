@@ -1,0 +1,122 @@
+// footer
+.footer {
+  padding: 24px 0;
+  @include pad {
+    padding: 48px 0;
+  }
+  @include desktop {
+    padding: 48px 0 32px;
+  }
+  a:hover {
+    color: $secondary;
+    transition: 0.3s;
+  }
+}
+
+.footer-info {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $light;
+  @include pad {
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .footer-nav {
+    @include pad {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .footer-nav li {
+    @include desktop {
+      margin-right: 48px;
+    }
+  }
+}
+
+.footer-icons {
+  order: 2;
+  img {
+    width: 24px;
+    height: 24px;
+    &:hover {
+      @include scaleEffect;
+    }
+    @include pad {
+      width: 30px;
+      height: 30px;
+    }
+    @include desktop {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  li:nth-child(2) {
+    @include pad {
+      margin-left: 16px;
+    }
+  }
+  li:nth-child(3) {
+    @include pad {
+      margin-left: 16px;
+    }
+  }
+}
+
+.footer-contact {
+  order: 1;
+  @include pad {
+    order: 3;
+    width: 100%;
+    margin-top: 24px;
+  }
+  @include desktop {
+    font-size: 36px;
+  }
+  i {
+    @include pad {
+      font-size: 24px;
+    }
+    @include desktop {
+      font-size: 36px;
+    }
+  }
+  a {
+    @include pad {
+      font-size: 24px;
+    }
+    @include desktop {
+      font-size: 36px;
+    }
+  }
+}
+
+.footer-policy {
+  @include pad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .copyright {
+    @include pad {
+      margin-bottom: 0;
+    }
+  }
+  .terms {
+    @include pad {
+      display: flex;
+    }
+  }
+  .terms li:nth-child(1) {
+    @include pad {
+      margin-bottom: 0;
+    }
+  }
+  .terms li:nth-child(2) {
+    @include pad {
+      margin-left: 36px;
+    }
+    @include desktop {
+      margin-left: 48px;
+    }
+  }
+}
