@@ -73,6 +73,9 @@
     @include desktop {
       display: block;
     }
+    @include desktop-lg {
+      width: 72%;
+    }
   }
   .article-social {
     padding-bottom: 16px;

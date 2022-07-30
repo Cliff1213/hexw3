@@ -79,14 +79,19 @@ img {
 }
 
 .container {
-  max-width: 1320px;
   padding: 0 12px;
   margin: 0 auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .container {
-    padding: 0 36px;
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1320px;
   }
 }
 
@@ -118,6 +123,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .align-center {
@@ -791,12 +802,12 @@ body {
 .banner {
   background: url("../images/home-header-sm.png") no-repeat center;
   background-size: cover;
-  padding: 144px 0;
+  height: 396px;
 }
 
 @media (min-width: 576px) {
   .banner {
-    padding: 296px 0;
+    height: 787px;
   }
 }
 
@@ -914,12 +925,12 @@ body {
 }
 
 .series {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
 @media (min-width: 576px) {
   .series {
-    padding: 80px 0;
+    margin: 80px 0;
   }
 }
 
@@ -1022,12 +1033,12 @@ body {
 }
 
 .comments {
-  padding: 40px 0;
+  margin: 40px 0;
 }
 
 @media (min-width: 576px) {
   .comments {
-    padding: 80px 0;
+    margin: 80px 0;
   }
 }
 
@@ -1954,6 +1965,12 @@ body {
 @media (min-width: 768px) {
   .article-wrap .article-foot {
     display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .article-wrap .article-foot {
+    width: 72%;
   }
 }
 
