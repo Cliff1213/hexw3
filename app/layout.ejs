@@ -3,24 +3,111 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
-  <link rel="stylesheet" href="./assets/style/all.css">
+  <meta property="og:title" content="Hello Clear World | 看得清，才能看得遠">
+  <meta property="og:description" content="眼鏡品牌形象網站切版練習">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="圖片">
+
+  <link rel="shortcut icon" href="./assets/images/logo-white-sm.png" type="image/x-icon">
+
+  <title>Hello Clear World | 看得清，才能看得遠 | 首頁</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/style/main.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <!-- navbar -->
+  <nav class="navbar bg-primary fixed w-100">
+    <div class="container d-flex justify-between align-center">
+      <h1><a href="./index.html" class="navbar-logo alt=" logo" title="回首頁">看得清，才能看得遠 | 眼鏡品牌官網</a></h1>
+      <ul class="navbar-list d-none fs-2">
+        <li class="mr-8"><a href="./product-op.html" class="text-white">系列鏡框</a></li>
+        <li class="mr-8"><a href="./location.html" class="text-white">門市據點</a></li>
+        <li class="mr-8"><a href="./blog.html" class="text-white">部落格</a></li>
+        <li><a href="./faq.html" class="text-white">常見問題</a></li>
+      </ul>
+
+      <a href="javascript:;" class="navbar-icon fs-3">
+        <img src="./assets/images/icon_menu.png" alt="icon_nav">
+        <img src="./assets/images/icon_close.png" class="d-none" alt="icon_close">
+      </a>
+
+    </div>
+  </nav>
+
+  <ul class="navbar-mobile fs-3 text-center fixed w-100 bg-primary">
+    <li><a href="./index.html" class="text-white d-block page-now">首頁</a></li>
+    <li><a href="./product-op.html" class="text-white d-block">系列鏡框</a></li>
+    <li><a href="./location.html" class="text-white d-block">門市據點</a></li>
+    <li><a href="./blog.html" class="text-white d-block">部落格</a></li>
+    <li><a href="./faq.html" class="text-white d-block">常見問題</a></li>
+  </ul>
+
+
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
-</body>
 
+
+    <!-- back top -->
+    <a href="javascript:;" class="backtop fixed text-white bg-primary d-none">Top</a>
+
+    <!-- footer -->
+    <footer class="footer bg-primary">
+      <div class="container">
+
+        <div class="footer-info d-flex justify-between mb-2 relative">
+          <ul class="footer-nav d-none">
+            <li class="mr-3"><a href="./index.html" class="text-white">首頁</a></li>
+            <li class="mr-3"><a href="./product-op.html" class="text-white">系列鏡框</a></li>
+            <li class="mr-3"><a href="./location.html" class="text-white">門市據點</a></li>
+            <li class="mr-3"><a href="./blog.html" class="text-white">部落格</a></li>
+            <li><a href="./faq.html" class="text-white">常見問題</a></li>
+          </ul>
+
+          <ul class="footer-icons d-flex">
+            <li>
+              <a href="javascript:;"><img src="./assets/images/ic-social-fb.png" alt="icon_fb"></a>
+            </li>
+            <li class="ml-1">
+              <a href="javascript:;"><img src="./assets/images/ic_social_ig.png" alt="icon_ig"></a>
+            </li>
+            <li class="ml-1">
+              <a href="javascript:;"><img src="./assets/images/ic_social_line.png" alt="icon_line"></a>
+            </li>
+          </ul>
+
+          <ul class="footer-contact">
+            <li class="mb-1">
+              <i class="fa-solid fa-phone fs-2 mr-1 text-white"></i>
+              <a href="tel:+0800-000-000" class="text-white">0800-000-000</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope fs-2 mr-1 text-white"></i>
+              <a href="mailto:glasses@business.com" class="text-white">glasses@business.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-policy">
+          <p class="copyright text-white mb-1">Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="terms">
+            <li class="mb-1"><a href="javascript:;" class="text-white">隱私權政策</a></li>
+            <li><a href="javascript:;" class="text-white">服務條款</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+    <script src="./assets/js/all.js"></script>
+</body>
 </html>

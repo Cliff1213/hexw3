@@ -1,275 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+title: Hello Clear World | 看得清，才能看得遠 | 部落格
+layout: ./app/layout.ejs
+engine: ejs
+---
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Hello Clear World | 看得清，才能看得遠">
-    <meta property="og:description" content="眼鏡品牌形象網站切版練習">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="圖片">
-  
-    <link rel="shortcut icon" href="./images/logo-white-sm.png" type="image/x-icon">
-  
-    <title>Hello Clear World | 部落格</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-  </head>
 
-<body>
-  <!-- navbar -->
-  <nav class="navbar bg-primary fixed w-100">
-    <div class="container d-flex justify-between align-center">
-      <h1>
-        <a href="./index.html" class="navbar-logo" alt="logo" title="回首頁">看得清，才能看得遠 | 眼鏡品牌官網</a>
-      </h1>
-      <ul class="navbar-list d-none fs-2">
-        <li class="mr-8">
-          <a href="./product-op.html" class="text-white">系列鏡框</a>
-        </li>
-        <li class="mr-8">
-          <a href="./location.html" class="text-white">門市據點</a>
-        </li>
-        <li class="mr-8">
-          <a href="./blog.html" class="text-white">部落格</a>
-        </li>
-        <li><a href="./faq.html" class="text-white">常見問題</a></li>
-      </ul>
 
-      <a href="javascript:;" class="navbar-icon fs-3">
-        <img src="./images/icon_menu.png" alt="icon_nav">
-        <img src="./images/icon_close.png" class="d-none" alt="icon_close">
-      </a>
-    </div>
-  </nav>
-
-  <ul class="navbar-mobile bg-dark fs-3 text-center fixed w-100">
-    <li><a href="./index.html" class="text-white d-block">首頁</a></li>
-    <li><a href="./product-op.html" class="text-white d-block">系列鏡框</a></li>
-    <li><a href="./location.html" class="text-white d-block">門市據點</a></li>
-    <li><a href="./blog.html" class="text-white d-block page-now">部落格</a></li>
-    <li><a href="./faq.html" class="text-white d-block">常見問題</a></li>
-  </ul>
-
-  <div class="blog-topbar bg-secondary fixed w-100 d-none">
-    <div class="container d-flex justify-between align-center ">
-      <ul class="topbar-list d-flex fs-2 bold">
-        <li><a href="javascript:;" class="text-white d-inline-block">最新消息</a></li>
-        <li><a href="./blog.html" class="text-white d-inline-block topbar-active">特別企劃</a></li>
-        <li><a href="javascript:;" class="text-white d-inline-block">新品上市</a></li>
-        <li><a href="javascript:;" class="text-white d-inline-block">鏡框小知識</a></li>
-      </ul>
-      <a href="javascript:;" class="topbar-icon">
-        <i class="fa-solid fa-xl fa-magnifying-glass text-white"></i>
-      </a>
-    </div>
+<div class="blog-topbar bg-secondary fixed w-100 d-none">
+  <div class="container d-flex justify-between align-center ">
+    <ul class="topbar-list d-flex fs-2 bold">
+      <li><a href="javascript:;" class="text-white d-inline-block">最新消息</a></li>
+      <li><a href="./blog.html" class="text-white d-inline-block topbar-active">特別企劃</a></li>
+      <li><a href="javascript:;" class="text-white d-inline-block">新品上市</a></li>
+      <li><a href="javascript:;" class="text-white d-inline-block">鏡框小知識</a></li>
+    </ul>
+    <a href="javascript:;" class="topbar-icon">
+      <i class="fa-solid fa-xl fa-magnifying-glass text-white"></i>
+    </a>
   </div>
+</div>
 
-  <div class="blog-wrap">
-    <div class="container">
+<div class="blog-wrap">
+  <div class="container">
 
-      <h2 class="blog-title bold fs-3 mb-3">部落格</h2>
+    <h2 class="blog-title bold fs-3 mb-3">部落格</h2>
 
-      <ul class="blog-list mb-8">
+    <ul class="blog-list mb-8">
 
-        <li class="blog-item mb-3">
-          <div class="item-img mb-1 relative">
-            <a href="./blog-article.html" class="show-info">
-              <img src="./images/blog-1.png" alt="img_blog">
-            </a>
-          </div>
+      <li class="blog-item mb-3">
+        <div class="item-img mb-1 relative">
+          <a href="./blog-article.html" class="show-info">
+            <img src="./assets/images/blog-1.png" alt="img_blog">
+          </a>
+        </div>
 
-          <ul class="item-content">
-            <li class="item-title d-flex align-end justify-between">
-              <div class="title-group">
-                <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">情人特別企劃</a></h3>
-                <h4 class="date text-black medium">2020 Valentine’s Special</h4>
-              </div>
-              <p class="text-black medium">2020/02/14</p>
-            </li>
+        <ul class="item-content">
+          <li class="item-title d-flex align-end justify-between">
+            <div class="title-group">
+              <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">情人特別企劃</a></h3>
+              <h4 class="date text-black medium">2020 Valentine’s Special</h4>
+            </div>
+            <p class="text-black medium">2020/02/14</p>
+          </li>
 
-            <li class="item-description d-none">
-              <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
-                即日起至2/16為止，不論是熱戀情侶⋯⋯<a href="./blog-article.html" class="more text-gray-dull">more</a></p>
-              <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
-            </li>
-          </ul>
-        </li>
+          <li class="item-description d-none">
+            <p>一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+              即日起至2/16為止，不論是熱戀情侶⋯⋯<a href="./blog-article.html" class="more text-gray-dull">more</a></p>
+            <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
+          </li>
+        </ul>
+      </li>
 
-        <li class="blog-item mb-3">
-          <div class="item-img mb-1 relative">
-            <a href="./blog-article.html" class="show-info">
-              <img src="./images/blog-2.png" alt="img_blog">
-            </a>
-          </div>
+      <li class="blog-item mb-3">
+        <div class="item-img mb-1 relative">
+          <a href="./blog-article.html" class="show-info">
+            <img src="./assets/images/blog-2.png" alt="img_blog">
+          </a>
+        </div>
 
-          <ul class="item-content">
-            <li class="item-title d-flex align-end justify-between">
-              <div class="title-group">
-                <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">街頭潮人訪問</a></h3>
-                <h4 class="date text-black medium">Street Interview</h4>
-              </div>
-              <p class="text-black medium">2020/02/02</p>
-            </li>
+        <ul class="item-content">
+          <li class="item-title d-flex align-end justify-between">
+            <div class="title-group">
+              <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">街頭潮人訪問</a></h3>
+              <h4 class="date text-black medium">Street Interview</h4>
+            </div>
+            <p class="text-black medium">2020/02/02</p>
+          </li>
 
-            <li class="item-description d-none">
-              <p>炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
-                恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦⋯⋯<a href="./blog-article.html"
-                  class="more text-gray-dull">more</a></p>
-              <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
-            </li>
-          </ul>
-        </li>
+          <li class="item-description d-none">
+            <p>炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
+              恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦⋯⋯<a href="./blog-article.html"
+                class="more text-gray-dull">more</a></p>
+            <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
+          </li>
+        </ul>
+      </li>
 
 
-        <li class="blog-item mb-3">
-          <div class="item-img mb-1 relative">
-            <a href="./blog-article.html" class="show-info">
-              <img src="./images/blog-3.png" alt="img_blog">
-            </a>
-          </div>
+      <li class="blog-item mb-3">
+        <div class="item-img mb-1 relative">
+          <a href="./blog-article.html" class="show-info">
+            <img src="./assets/images/blog-3.png" alt="img_blog">
+          </a>
+        </div>
 
-          <ul class="item-content">
-            <li class="item-title d-flex align-end justify-between">
-              <div class="title-group">
-                <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">春季新品上市</a></h3>
-                <h4 class="date text-black medium">New Selection</h4>
-              </div>
-              <p class="text-black medium">2020/02/02</p>
-            </li>
+        <ul class="item-content">
+          <li class="item-title d-flex align-end justify-between">
+            <div class="title-group">
+              <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">春季新品上市</a></h3>
+              <h4 class="date text-black medium">New Selection</h4>
+            </div>
+            <p class="text-black medium">2020/02/02</p>
+          </li>
 
-            <li class="item-description d-none">
-              <p>2020
-                年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼⋯⋯<a
-                  href="./blog-article.html" class="more text-gray-dull">more</a></p>
-              <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
-            </li>
-          </ul>
-        </li>
+          <li class="item-description d-none">
+            <p>2020
+              年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼⋯⋯<a
+                href="./blog-article.html" class="more text-gray-dull">more</a></p>
+            <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
+          </li>
+        </ul>
+      </li>
 
-        <li class="blog-item mb-3">
-          <div class="item-img mb-1 relative">
-            <a href="./blog-article.html" class="show-info">
-              <img src="./images/blog-4.png" alt="img_blog">
-            </a>
-          </div>
+      <li class="blog-item mb-3">
+        <div class="item-img mb-1 relative">
+          <a href="./blog-article.html" class="show-info">
+            <img src="./assets/images/blog-4.png" alt="img_blog">
+          </a>
+        </div>
 
-          <ul class="item-content">
-            <li class="item-title d-flex align-end justify-between">
-              <div class="title-group">
-                <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">設計師獨享鏡框優惠</a></h3>
-                <h4 class="date text-black medium">Sales for Designer</h4>
-              </div>
-              <p class="text-black medium">2020/01/18</p>
-            </li>
+        <ul class="item-content">
+          <li class="item-title d-flex align-end justify-between">
+            <div class="title-group">
+              <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">設計師獨享鏡框優惠</a></h3>
+              <h4 class="date text-black medium">Sales for Designer</h4>
+            </div>
+            <p class="text-black medium">2020/01/18</p>
+          </li>
 
-            <li class="item-description d-none">
-              <p>2020
-                年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼⋯⋯<a
-                  href="./blog-article.html" class="more text-gray-dull">more</a></p>
-              <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
-            </li>
-          </ul>
-        </li>
+          <li class="item-description d-none">
+            <p>2020
+              年春季的光學眼鏡跳脫前幾季流行的復古框型，比起圓框與小方框等文青風格，偏向個性款式的眉框眼鏡成為這一季的耀眼之星。除了經典款式如黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重的特殊氣質，包覆在圓形鏡框上的貓眼⋯⋯<a
+                href="./blog-article.html" class="more text-gray-dull">more</a></p>
+            <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
+          </li>
+        </ul>
+      </li>
 
-        <li class="blog-item">
-          <div class="item-img mb-1 relative">
-            <a href="./blog-article.html" class="show-info">
-              <img src="./images/blog-5.png" alt="img_blog">
-            </a>
-          </div>
+      <li class="blog-item">
+        <div class="item-img mb-1 relative">
+          <a href="./blog-article.html" class="show-info">
+            <img src="./assets/images/blog-5.png" alt="img_blog">
+          </a>
+        </div>
 
-          <ul class="item-content">
-            <li class="item-title d-flex align-end justify-between">
-              <div class="title-group">
-                <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">抵抗夏日大作戰</a></h3>
-                <h4 class="date text-black medium">Summer Special</h4>
-              </div>
-              <p class="text-black medium">2019/08/07</p>
-            </li>
+        <ul class="item-content">
+          <li class="item-title d-flex align-end justify-between">
+            <div class="title-group">
+              <h3 class="fs-3"><a href="./blog-article.html" class="text-secondary underline-active">抵抗夏日大作戰</a></h3>
+              <h4 class="date text-black medium">Summer Special</h4>
+            </div>
+            <p class="text-black medium">2019/08/07</p>
+          </li>
 
-            <li class="item-description d-none">
-              <p>炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
-                恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦⋯⋯<a href="./blog-article.html"
-                  class="more text-gray-dull">more</a></p>
-              <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
-            </li>
-          </ul>
-        </li>
+          <li class="item-description d-none">
+            <p>炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為主，但有時單純只穿搭 T
+              恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配件」，為穿搭點綴出與眾不同的視覺層次，而本季有哪些必備的配件系列呢？一起從以下推薦⋯⋯<a href="./blog-article.html"
+                class="more text-gray-dull">more</a></p>
+            <a href="./blog-article.html" class="more-desktop fs-5 ex-bold text-secondary d-none">MORE</a>
+          </li>
+        </ul>
+      </li>
 
-      </ul>
+    </ul>
 
-      <ul class="pagination d-flex justify-between mx-auto">
-        <li><a href="javascript:;" class="text-gray-dull">上一頁</a></li>
-        <li class="bg-black"><a href="javascript:;" class="text-white">1</a></li>
-        <li><a href="javascript:;" class="text-gray-dull">2</a></li>
-        <li><a href="javascript:;" class="text-gray-dull">3</a></li>
-        <li><a href="javascript:;" class="text-gray-dull">4</a></li>
-        <li><a href="javascript:;" class="text-gray-dull">5</a></li>
-        <li><a href="javascript:;" class="text-gray-dull">下一頁</a></li>
-      </ul>
+    <ul class="pagination d-flex justify-between mx-auto">
+      <li><a href="javascript:;" class="text-gray-dull">上一頁</a></li>
+      <li class="bg-black"><a href="javascript:;" class="text-white">1</a></li>
+      <li><a href="javascript:;" class="text-gray-dull">2</a></li>
+      <li><a href="javascript:;" class="text-gray-dull">3</a></li>
+      <li><a href="javascript:;" class="text-gray-dull">4</a></li>
+      <li><a href="javascript:;" class="text-gray-dull">5</a></li>
+      <li><a href="javascript:;" class="text-gray-dull">下一頁</a></li>
+    </ul>
 
-    </div>
   </div>
-
-  <!-- back top -->
-  <a href="javascript:;" class="backtop fixed text-white bg-primary d-none">Top</a>
-
-  <!-- footer -->
-  <footer class="footer bg-primary">
-    <div class="container">
-      <div class="footer-info d-flex justify-between mb-2 relative">
-        <ul class="footer-nav d-none">
-          <li><a href="./index.html" class="text-white d-block">首頁</a></li>
-          <li><a href="./product-op.html" class="text-white d-block">系列鏡框</a></li>
-          <li><a href="./location.html" class="text-white d-block">門市據點</a></li>
-          <li><a href="./blog.html" class="text-white d-block">部落格</a></li>
-          <li><a href="./faq.html" class="text-white d-block">常見問題</a></li>
-        </ul>
-
-        <ul class="footer-icons d-flex">
-          <li>
-            <a href="javascript:;"><img src="./images/ic-social-fb.png" alt="icon_footer" /></a>
-          </li>
-          <li class="ml-1">
-            <a href="javascript:;"><img src="./images/ic_social_ig.png" alt="icon_footer" /></a>
-          </li>
-          <li class="ml-1">
-            <a href="javascript:;"><img src="./images/ic_social_line.png" alt="icon_footer" /></a>
-          </li>
-        </ul>
-
-        <ul class="footer-contact">
-          <li class="mb-1">
-            <i class="fa-solid fa-phone fs-2 mr-1 text-white"></i>
-            <a href="tel:+0800-000-000" class="text-white">0800-000-000</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope fs-2 mr-1 text-white"></i>
-            <a href="mailto:glasses@business.com" class="text-white">glasses@business.com</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-policy">
-        <p class="copyright text-white mb-1">
-          Copyright © 2020 Glasses.All rights reserved.
-        </p>
-        <ul class="terms">
-          <li class="mb-1"><a href="javascript:;" class="text-white">隱私權政策</a></li>
-          <li><a href="javascript:;" class="text-white">服務條款</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <script src="./js/all.js"></script>
-</body>
-
-</html>
+</div>

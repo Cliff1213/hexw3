@@ -1,167 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+title: Hello Clear World | 看得清，才能看得遠 | 門市據點/assets
+layout: ./app/layout.ejs
+engine: ejs
+---
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Hello Clear World | 看得清，才能看得遠">
-    <meta property="og:description" content="眼鏡品牌形象網站切版練習">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="圖片">
-  
-    <link rel="shortcut icon" href="./images/logo-white-sm.png" type="image/x-icon">
-  
-    <title>Hello Clear World | 門市據點</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-  </head>
 
-<body>
-  <!-- navbar -->
-  <nav class="navbar bg-primary fixed w-100">
-    <div class="container d-flex justify-between align-center">
-      <h1>
-        <a href="./index.html" class="navbar-logo" alt="logo" title="回首頁">看得清，才能看得遠 | 眼鏡品牌官網</a>
-      </h1>
-      <ul class="navbar-list d-none fs-2">
-        <li class="mr-8">
-          <a href="./product-op.html" class="text-white">系列鏡框</a>
+
+<div class="store location">
+  <div class="container">
+    <h2 class="location-title fs-3 bold mb-3">門市據點</h2>
+    <div class="location-selection mb-3 d-flex align-center">
+      <label for="city" class="location-label mr-1">選擇分店</label>
+      <select class="text-gray-deep" name="city" id="city">
+        <option value="台北中山旗艦店">台北中山旗艦店</option>
+        <option value="台北綠園店">台北綠園店</option>
+        <option value="台中清水旗艦店">台中清水旗艦店</option>
+        <option value="高雄中正形象店">高雄中正形象店</option>
+        <option value="高雄夢時代店">高雄夢時代店</option>
+      </select>
+    </div>
+
+    <div class="store-list">
+      <ul class="location-list d-flex flex-wrap">
+        <li class="location-card w-100">
+          <div class="card-img d-flex align-center bg-black">
+            <img src="./assets/images/store-1.png" alt="img_store" />
+          </div>
         </li>
-        <li class="mr-8">
-          <a href="./location.html" class="text-white">門市據點</a>
+
+        <li class="location-card w-100">
+          <div class="card-wrap d-flex flex-column justify-between">
+            <p class="card-title fs-3">台北中山旗艦店</p>
+
+            <ul class="card-body">
+              <li class="d-flex mb-1">
+                <i class="fa-solid fa-sm fa-phone mr-1 text-primary"></i>
+                <a href="tel:+(02)000-2345" class="fs-2 text-primary">電話：(02)000-2345</a>
+              </li>
+              <li class="d-flex mb-1">
+                <i class="fa-solid fa-clock fa-sm mr-1"></i>
+                <p class="fs-2">營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex">
+                <i class="fa-solid fa-location-dot mr-1"></i>
+                <p class="fs-2">地址：台北市中山區南京東路 25 巷 2-1 號</p>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li class="mr-8">
-          <a href="./blog.html" class="text-white">部落格</a>
-        </li>
-        <li><a href="./faq.html" class="text-white">常見問題</a></li>
       </ul>
 
-      <a href="javascript:;" class="navbar-icon fs-3">
-        <img src="./images/icon_menu.png" alt="icon_nav">
-        <img src="./images/icon_close.png" class="d-none" alt="icon_close">
-      </a>
-    </div>
-  </nav>
-
-  <ul class="navbar-mobile bg-dark fs-3 text-center fixed w-100">
-    <li><a href="./index.html" class="text-white d-block">首頁</a></li>
-    <li><a href="./product-op.html" class="text-white d-block">系列鏡框</a></li>
-    <li><a href="./location.html" class="text-white d-block page-now">門市據點</a></li>
-    <li><a href="./blog.html" class="text-white d-block">部落格</a></li>
-    <li><a href="./faq.html" class="text-white d-block">常見問題</a></li>
-  </ul>
-
-  <div class="store location">
-    <div class="container">
-      <h2 class="location-title fs-3 bold mb-3">門市據點</h2>
-      <div class="location-selection mb-3 d-flex align-center">
-        <label for="city" class="location-label mr-1">選擇分店</label>
-        <select class="text-gray-deep" name="city" id="city">
-          <option value="台北中山旗艦店">台北中山旗艦店</option>
-          <option value="台北綠園店">台北綠園店</option>
-          <option value="台中清水旗艦店">台中清水旗艦店</option>
-          <option value="高雄中正形象店">高雄中正形象店</option>
-          <option value="高雄夢時代店">高雄夢時代店</option>
-        </select>
-      </div>
-
-      <div class="store-list">
-        <ul class="location-list d-flex flex-wrap">
-          <li class="location-card w-100">
-            <div class="card-img d-flex align-center bg-black">
-              <img src="./images/store-1.png" alt="img_store" />
-            </div>
-          </li>
-
-          <li class="location-card w-100">
-            <div class="card-wrap d-flex flex-column justify-between">
-              <p class="card-title fs-3">台北中山旗艦店</p>
-
-              <ul class="card-body">
-                <li class="d-flex mb-1">
-                  <i class="fa-solid fa-sm fa-phone mr-1 text-primary"></i>
-                  <a href="tel:+(02)000-2345" class="fs-2 text-primary">電話：(02)000-2345</a>
-                </li>
-                <li class="d-flex mb-1">
-                  <i class="fa-solid fa-clock fa-sm mr-1"></i>
-                  <p class="fs-2">營業時間：10:00-21:00</p>
-                </li>
-                <li class="d-flex">
-                  <i class="fa-solid fa-location-dot mr-1"></i>
-                  <p class="fs-2">地址：台北市中山區南京東路 25 巷 2-1 號</p>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-
-        <div class="store-map mt-3">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636119824477!2d121.53568141405307!3d25.052271043714857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1627290473747!5m2!1szh-TW!2stw"
-            style="border: 0" allowfullscreen="" width="100%" height="100%" loading="lazy"></iframe>
-        </div>
+      <div class="store-map mt-3">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636119824477!2d121.53568141405307!3d25.052271043714857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1627290473747!5m2!1szh-TW!2stw"
+          style="border: 0" allowfullscreen="" width="100%" height="100%" loading="lazy"></iframe>
       </div>
     </div>
   </div>
-
-  <!-- back top -->
-  <a href="javascript:;" class="backtop fixed text-white bg-primary d-none">Top</a>
-
-  <!-- footer -->
-  <footer class="footer bg-primary">
-    <div class="container">
-      <div class="footer-info d-flex justify-between mb-2 relative">
-        <ul class="footer-nav d-none">
-          <li><a href="./index.html" class="text-white d-block">首頁</a></li>
-          <li><a href="./product-op.html" class="text-white d-block">系列鏡框</a></li>
-          <li><a href="./location.html" class="text-white d-block">門市據點</a></li>
-          <li><a href="./blog.html" class="text-white d-block">部落格</a></li>
-          <li><a href="./faq.html" class="text-white d-block">常見問題</a></li>
-        </ul>
-
-        <ul class="footer-icons d-flex">
-          <li>
-            <a href="javascript:;"><img src="./images/ic-social-fb.png" alt="icon_footer" /></a>
-          </li>
-          <li class="ml-1">
-            <a href="javascript:;"><img src="./images/ic_social_ig.png" alt="icon_footer" /></a>
-          </li>
-          <li class="ml-1">
-            <a href="javascript:;"><img src="./images/ic_social_line.png" alt="icon_footer" /></a>
-          </li>
-        </ul>
-
-        <ul class="footer-contact">
-          <li class="mb-1">
-            <i class="fa-solid fa-phone fs-2 mr-1 text-white"></i>
-            <a href="tel:+0800-000-000" class="text-white">0800-000-000</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope fs-2 mr-1 text-white"></i>
-            <a href="mailto:glasses@business.com" class="text-white">glasses@business.com</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-policy">
-        <p class="copyright text-white mb-1">
-          Copyright © 2020 Glasses.All rights reserved.
-        </p>
-        <ul class="terms">
-          <li class="mb-1"><a href="javascript:;" class="text-white">隱私權政策</a></li>
-          <li><a href="javascript:;" class="text-white">服務條款</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <script src="./js/all.js"></script>
-</body>
-
-</html>
+</div>
