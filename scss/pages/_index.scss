@@ -2,9 +2,9 @@
 .banner {
   background: url('../images/home-header-sm.png') no-repeat center;
   background-size: cover;
-  padding: 144px 0;
+  height: 396px;
   @include pad {
-    padding: 296px 0;
+    height: 787px;
   }
   @include desktop-lg {
     background: url('../images/home-header.png') no-repeat center;
@@ -83,9 +83,9 @@
 
 // series
 .series {
-  padding: 40px 0;
+  margin: 40px 0;
   @include pad {
-    padding: 80px 0;
+    margin: 80px 0;
   }
   &-title {
     @include pad {
@@ -164,9 +164,9 @@
 
 // comments
 .comments {
-  padding: 40px 0;
+  margin: 40px 0;
   @include pad {
-    padding: 80px 0;
+    margin: 80px 0;
   }
   &-title {
     @include pad {
